@@ -1,7 +1,7 @@
 # Directory Files Randomizer
 Simple program that appends random numbers to each file in a directory.
 
-## How does it works?
+## How does it work?
 This program works by generating random numbers (with the upper bound being the number of files in the current folder)
 for all files in the directory set by the user. For example, let's say a folder has a file called "file1.txt", what the
 program will do, is append a random number to this file's name. Now the file's name will be, for example, "3 - file1.txt".
