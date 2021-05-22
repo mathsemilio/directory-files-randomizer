@@ -20,8 +20,8 @@ public class MessagesPrinter {
 
     public static void printProgramHeader() {
         System.out.println("//* -------------------------------------------------------------------------------- //*");
-        System.out.println("//*                       Directory Files Randomizer                                 //*");
-        System.out.println("//*                            by Matt Menezes                                       //*");
+        System.out.println("//*                            Directory Files Randomizer                            //*");
+        System.out.println("//*                                 by Matt Menezes                                  //*");
         System.out.println("//* -------------------------------------------------------------------------------- //*");
     }
 

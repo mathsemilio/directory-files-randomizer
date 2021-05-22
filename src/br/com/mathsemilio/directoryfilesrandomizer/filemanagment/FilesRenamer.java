@@ -59,7 +59,7 @@ public class FilesRenamer {
     private void renameFileThatStartWithNumbers(File file, String firstFileChars) {
         final int randomNumber = randomNumberGenerator.getRandomNumber();
 
-        final String randomNumberWithSlash = randomNumber + " -";
+        final String randomNumberWithSlash = randomNumber + " - ";
 
         String newFileName;
         File renamedFile;
