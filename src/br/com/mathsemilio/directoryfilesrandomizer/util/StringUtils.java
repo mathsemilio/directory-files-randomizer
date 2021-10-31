@@ -16,26 +16,26 @@ limitations under the License.
 
 package br.com.mathsemilio.directoryfilesrandomizer.util;
 
-public class StringUtil {
+public class StringUtils {
 
-    public static String getFirstCharactersFrom(String s) {
-        return s.split(" ")[0];
+    public static String getFirstCharactersFrom(String string) {
+        return string.split(" ")[0];
     }
 
-    public static String chopFileName(String fileName) {
-        return fileName.split(" - ")[1];
+    public static String getFirstStringAfterSlashFrom(String string) {
+        return string.split(" - ")[1];
     }
 
-    public static boolean containsNumbers(String s) {
+    public static boolean containsNumbers(String string) {
         boolean containsNumbers = false;
 
-        for (char c : s.toCharArray())
-            containsNumbers = Character.isDigit(c);
+        for (char character : string.toCharArray())
+            containsNumbers = Character.isDigit(character);
 
         return containsNumbers;
     }
 
-    public static boolean containsSlash(String s) {
-        return s.contains("-");
+    public static boolean containsSlash(String string) {
+        return string.contains("-");
     }
 }

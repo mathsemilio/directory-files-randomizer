@@ -1,1 +1,5 @@
 /out/
+*.iml
+/.idea/misc.xml
+/.idea/runConfigurations.xml
+**/.DS_Store
