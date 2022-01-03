@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
  */
 
-package br.com.mathsemilio.directoryfilesrandomizer.messagesprinter;
+package br.com.mathsemilio.directoryfilesrandomizer.util;
 
 public class MessagesPrinter {
 
@@ -26,14 +26,14 @@ public class MessagesPrinter {
     }
 
     public static void printPromptUserMessage() {
-        System.out.println("To start the program, please type the working path or \"No\" to exit.");
+        System.out.println("Please type the working path or \"No\" to exit.");
     }
 
-    public static void printFileRenamedSuccessfullyMessage(String fileName) {
-        System.out.println("File renamed to: " + fileName + ".");
+    public static void printRenameFileSuccessMessage(String fileName) {
+        System.out.println("File renamed to: " + fileName);
     }
 
-    public static void printErrorRenamingFileMessage(String fileName) {
-        System.out.println("Error renaming: " + fileName + ".");
+    public static void printRenameFileErrorMessage(String fileName) {
+        System.out.println("Error renaming: " + fileName);
     }
 }
