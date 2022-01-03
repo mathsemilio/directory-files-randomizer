@@ -17,7 +17,7 @@ Once you have the JDK and the ```JAVA_HOME``` environmental variable set, you ar
   
 ## License
 ```
-   Copyright 2021 Matt Menezes
+   Copyright 2021 Matheus Menezes
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
