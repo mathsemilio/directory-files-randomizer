@@ -17,7 +17,7 @@ limitations under the License.
 package br.com.mathsemilio.directoryfilesrandomizer;
 
 import br.com.mathsemilio.directoryfilesrandomizer.util.MessagesPrinter;
-import br.com.mathsemilio.directoryfilesrandomizer.filesystem.DirectoryFilesRenamer;
+import br.com.mathsemilio.directoryfilesrandomizer.filesystem.FilesRenamer;
 
 import java.util.Scanner;
 
@@ -32,7 +32,7 @@ public class Main {
         if (userInput.equals("No")) {
             System.exit(1);
         } else {
-            DirectoryFilesRenamer filesRenamer = DirectoryFilesRenamer.forPath(userInput);
+            FilesRenamer filesRenamer = FilesRenamer.forPath(userInput);
             filesRenamer.start();
         }
     }

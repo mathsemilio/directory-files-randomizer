@@ -22,18 +22,18 @@ import br.com.mathsemilio.directoryfilesrandomizer.filesystem.directoryfilesmana
 
 import static br.com.mathsemilio.directoryfilesrandomizer.filesystem.directoryfilesmanager.RenameFileResult.*;
 
-public class DirectoryFilesRenamer {
+public class FilesRenamer {
 
     private DirectoryFile file;
 
     private final DirectoryFilesManager manager;
     private final UniqueRandomNumberGenerator numberGenerator;
 
-    public static DirectoryFilesRenamer forPath(String path) {
-        return new DirectoryFilesRenamer(path);
+    public static FilesRenamer forPath(String path) {
+        return new FilesRenamer(path);
     }
 
-    private DirectoryFilesRenamer(String path) {
+    private FilesRenamer(String path) {
         manager = DirectoryFilesManager.forDirectoryAt(path);
         numberGenerator = UniqueRandomNumberGenerator.withUpperBound(manager.getNumberOfFiles());
     }
