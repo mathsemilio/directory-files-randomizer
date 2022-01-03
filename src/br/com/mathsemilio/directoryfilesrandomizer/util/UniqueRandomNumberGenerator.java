@@ -16,8 +16,7 @@ limitations under the License.
 
 package br.com.mathsemilio.directoryfilesrandomizer.util;
 
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.*;
 
 public class UniqueRandomNumberGenerator {
 
@@ -33,7 +32,6 @@ public class UniqueRandomNumberGenerator {
     private final ArrayList<Integer> numbers = new ArrayList<>();
 
     private final int upperBound;
-
     private int numbersIndex = 0;
 
     private void generateRandomNumbers() {
@@ -43,12 +41,9 @@ public class UniqueRandomNumberGenerator {
         Collections.shuffle(numbers);
     }
 
-    public int getUniqueRandomNumber() {
-        int randomNumber;
-
-        randomNumber = numbers.get(numbersIndex);
+    public int getRandomNumber() {
+        int randomNumber = numbers.get(numbersIndex);
         ++numbersIndex;
-
         return randomNumber;
     }
 }
